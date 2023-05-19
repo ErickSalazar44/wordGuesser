@@ -1,0 +1,83 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4.9rem 2rem;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 0.2em;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.animation1 {
+  display: grid;
+  place-content: center;
+}
+
+.win_Lose {
+  color: #f9f9f9;
+  overflow: hidden;
+  border-right: .15em solid #646cff;
+  white-space: nowrap;
+  animation: efecto 2s steps(20, end) forwards, borde .7s infinite;
+}
+
+/* Efectos */
+@keyframes efecto {
+  from {width: 0; }
+  to {width: 100%; }
+}
+
+@keyframes borde {
+  from {border-color: transparent; }
+  to { border-color: #646cff; }
+}
+
+.nueva {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px ;
+  color: #03e9f4;
+  text-transform: uppercase;
+  transition: 0.8s;
+  letter-spacing: 6px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.nueva:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 20px #03e9f4;
+  border-color: #03e9f4;
+  
+}
+
+
